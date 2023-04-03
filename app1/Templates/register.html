@@ -1,0 +1,83 @@
+{% extends 'base.html' %} 
+{% block title %}Register{% endblock %}
+
+{% block body %}  
+ 
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+      .success{
+       color: green;
+      }
+    </style>
+</head>
+<body>
+    <form action="" method="POST" novalidate>
+        {% csrf_token %}
+        {% for a in form %}
+          {{a.label_tag}} {{a}} {{a.errors|striptags}} <br>
+           <br>
+        {% endfor %} 
+        <input type="submit" value="submit">
+    </form>
+    {% if messages %} 
+      {% for b in messages %} 
+        <small {% if b.tags %} class="{{b.tags}}" {% endif %}> {{b}}</small>
+      {% endfor %} 
+    {% endif %}
+</body>
+</html>
+ -->
+
+<!-- <h1>Register</h1>
+<style>
+    .success{
+     color: green;
+    }
+  </style>
+</head>
+<body>
+  <form action="" method="POST" novalidate>
+      {% csrf_token %}
+      {% for a in form %}
+        {{a.label_tag}} {{a}} {{a.errors|striptags}} <br> <br>
+      {% endfor %} 
+      <input type="submit" value="submit">
+  </form>
+  {% if messages %} 
+    {% for b in messages %} 
+      <small {% if b.tags %} class="{{b.tags}}" {% endif %}> {{b}}</small>
+    {% endfor %} 
+    {% endif %}
+</body>
+</html> -->
+
+
+
+
+
+<!-- ########################################################## -->
+
+
+
+<h1>Register</h1>
+<div>
+    <form method="POST">
+		{% csrf_token %}
+    <table>
+      {{ form }}
+  </table>
+        <button class="btn btn-primary" type="submit">Register</button>
+    </form>
+</div>
+
+ {% endblock %} 

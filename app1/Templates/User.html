@@ -1,0 +1,77 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Create</title>
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+              crossorigin="anonymous">
+</head>
+<body>
+    <div class = "row">
+        <div class = "col-sm-4">
+            <h4> Add New User</h4>
+            <form action="" method = "POST">
+            {{form.as_p}}
+            {% csrf_token %}
+            <input type="submit" value="Add">
+            </form>
+        </div>
+
+        <div class="col-sm-8">
+            <h4>User Information</h4>
+            {% if detail1 %}
+            
+            <table class="table table-striped table-bordered table-sm">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Pho_no</th>
+                        <th>Email</th>
+                        <th>Password </th>
+                        <th>Confirmation_Password</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for info in detail1 %}
+                        <tr>
+                            <td>{{ info.name }}</td>
+                            <td>{{ info.pho_no }}</td>
+                            <td>{{ info.email }}</td>
+                            <th>{{ info.password}}</th>
+                            <th>{{ info.confirmation_password}}</th>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% endif %}
+        </div> 
+    </div> -->
+    <!-- <form action="" method="Post">
+        {% csrf_token %}
+        <table>
+            {{User}}
+        </table>
+         -->
+        <!-- <label for="name" style="color:red">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email" style="color:red">Email</label><br>
+        <input type="text" id="Email" name="Email"><br>
+        <label for=" password" style="color:red"> password:</label><br>
+        <input type="text" id=" password" name=" password"><br>
+        <label for=" confirmation_password" style="color:red"> confirmation_password</label><br>
+        <input type="text" id=" confirmation_passworde" name=" confirmation_password">
+        <br>
+        <input type="submit" style="color:red" value="save"> -->
+      <!-- </form> -->
+      
+    <!-- {% if msg %}
+        <h2>{{ msg|upper}}</h2>
+    {% endif %} -->
+    
+<!-- </body>
+</html> -->

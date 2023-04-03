@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student Information</title>
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+</head>
+<body>
+    <table style="width:100%">
+        <thead class="thead-dark">
+            <h4> Student Information </h4>
+           
+             
+            <tr>
+                <th>Student_Name</th>
+                <th>Fathers_Name</th>
+                <th>Mothers_Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Level</th>
+                <th>Department</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Pho_No</th>
+                <th>Dob</th>
+                <th>Password</th>
+                <th>Confirmation_Password</th>    
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in data %}
+
+            <tr>
+                <td style="text-align: center;">{{i.student_name}}</td>
+                <td style="text-align: center;">{{i.fathers_name}}</td>
+                <td style="text-align: center;">{{i.mothers_name}}</td>
+                <td style="text-align: center;">{{i.age}}</td>
+                <td style="text-align: center;">{{i.gender}}</td>
+                <td style="text-align: center;">{{i.level}}</td>
+                <td style="text-align: center;">{{i.department}}</td>
+                <td style="text-align: center;">{{i.address}}</td>
+                <td style="text-align: center;">{{i.email}}</td>
+                <td style="text-align: center;">{{i.pho_no}}</td>
+                <td style="text-align: center;">{{i.dob}}</td>
+                <td style="text-align: center;">{{i.password}}</td>
+                <td style="text-align: center;">{{i.confirmation_password}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+    
+</body>
+</html>
