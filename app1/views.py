@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
-# from .forms import info
-# from . forms1 import Project_Detail
+from .forms import info
+from . forms1 import Project_Detail
 
 #####################################
 
