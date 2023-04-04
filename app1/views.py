@@ -28,18 +28,18 @@ from .forms import StudentForm
 
 # Create your views here.
 
-# def User(request):
-#     if request.method == "Post":
-#         Name = request.POST.get("name")
-#         email = request.POST.get("email")
-#         pho_no = request.POST.get("pho_no")
+def User(request):
+    if request.method == "Post":
+        Name = request.POST.get("name")
+        email = request.POST.get("email")
+        pho_no = request.POST.get("pho_no")
 
-#         User.objects.create(
-#             Name = Name,
-#             email = email,
-#             pho_no = pho_no,
+        User.objects.create(
+            Name = Name,
+            email = email,
+            pho_no = pho_no,
 
-        # )
+        )
 
 
         # return render(
